@@ -1,0 +1,296 @@
+<html>
+
+<head>
+    <title>Hogwarts' website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!--Assuming "Menu with Marquee" and "Contact Us" has been completed in Project 68 -->
+    <!--Assuming "Campus Life" and "Achievements" has been completed in Project 69-->
+
+    <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Hogwarts</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#About">About Our Campus</a></li>
+                <li><a href="#Achievements">Achievements</a></li>
+                <li><a href="#New">What's New</a></li>
+                <li><a href="#Alumni">Alumni</a></li>
+                <li><a href="#Contact">Contact us</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div class="announcement">
+        <marquee id="marqueeStyle" onmouseover="this.stop();" onmouseout="this.start();">
+            Feel free to ask queries on hogwarts@gmail.com
+        </marquee>
+    </div>
+
+    <div class="container">
+        <!--Campus Life-->
+        <div class="page-header" id="About">
+            <h2 class="text-capitalize">Campus Life</h2>
+
+            <div class="row">
+                <!--1st Campus Life-->
+                <div class="travel_mainDiv">
+                    <img class="img-responsive" src="https://images.ctfassets.net/usf1vwtuqyxm/3QQaEkThAnIAiXveGhJYD9/f79a571dbe9fd456d65e783040601fdc/hogwarts-castle-.jpg">
+                    <h4 class="text-capitalize"><kbd>Hogwarts School of Witchcraft and Wizardry</kbd></h4>
+                    <hr>
+                    <h5 class="text-success text-left text-capitalize">The best magical school in the world!</h5>
+                    <p class="text-muted text-left">Established around the 10th century, Hogwarts was considered to be one of the finest magical institutions in the wizarding world, though other notable schools included Beauxbatons Academy of Magic in France, the Durmstrang Institute implied to be in northern Europe, and Ilvermorny School of Witchcraft and Wizardry in the United States.</p>
+                </div>
+                <!--2nd Campus Life-->
+                <div class="travel_mainDiv">
+                    <!--Give appropriate class below for the image img-responsive-->
+                    <img class="img-responsive" src="data:image/jpeg;base64,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">
+                    <h4 class="text-capitalize"><kbd>The library</kbd></h4>
+                    <hr>
+                    <!--Give classes below text-success text-left-->
+                    <h5 class="text-success text-left text-capitalize">Also called the neverending library!</h5>
+                    <p class="text-muted text-left">The Hogwarts Library was located off of a corridor on the first-floor of Hogwarts Castle and contained tens of thousands of books on thousands of shelves.</p>
+
+                </div>
+                <!--3rd Campus life-->
+                <div class="travel_mainDiv">
+                    <img class="img-responsive" src="https://i.ytimg.com/vi/4QGwmoIJKB8/maxresdefault.jpg">
+                    <!-- Give text-capitalize below to make the first letters in Capitals-->
+                    <h4 class="text-capitalize"><kbd>The Astronomy Tower</kbd></h4>
+                    <hr>
+                    <h5 class="text-success text-left text-capitalize">It is the tallest tower in Hogwarts!</h5>
+                    <!-- Give text-muted below to show the text in grey color-->
+                    <p class="text-muted text-left"> It was where students studied the stars and planets through their telescopes in Astronomy lessons with Professor Aurora Sinistra. This was usually done at midnight, when the stars were best seen. The tower was generally out-of-bounds except for classes.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--Achievements-->
+    <div class="page-header" id="Achievements">
+        <h2 class="text-capitalize">school achievements</h2>
+    </div>
+    <div class="bg-primary movie_head" data-toggle="collapse" data-target="#school_achievement1">
+        The best at Quidditch <i class="fa fa-sort-desc"></i>
+    </div>
+    <!--1st Achievement-->
+    <div id="school_achievement1" class="collapse">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="achievementsID">
+            <img src="https://i.insider.com/57d2c4348f89f51c008b4576?width=1200&format=jpeg" class="img-responsive img-thumbnail">
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+            <h5 class="text-success text-left text-capitalize">Games take place every november!
+            </h5>
+            <p>Gryffindor wins the Quidditch Cup (1997) by 300 points!</p>
+        </div>
+    </div>
+    <!--2nd Achievement-->
+    <div class="bg-primary movie_head" data-toggle="collapse" data-target="#school_achievement2">
+        The most powerful wizard Dumbledore<i class="fa fa-sort-desc"></i>
+    </div>
+
+    <div id="school_achievement2" class="collapse">
+
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="achievementsID">
+
+            <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2019/06/Albus-Dumbledore-from-Harry-Potter-and-the-Goblet-of-Fire.jpg?q=50&fit=crop&w=740&h=370&dpr=1.5" class="img-responsive img-thumbnail">
+        </div>
+
+        <div class="movie_text col-lg-9 col-md-9 col-sm-9 col-xs-12">
+            <h5 class="text-success text-left text-capitalize">Dumbledore is the most powerful wizard and the principal of Hogwarts
+            </h5>
+            <p>Albus Dumbledore, the most powerful wizard in the modern Wizarding World was once but a humble professor at Hogwarts. He used to teach Defense Against the Dark Arts in Hogwarts back in the 1920s and was a notable wizard back then.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!--What's New-->
+        <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="New">
+            <h2 class="text-capitalize ">What's New</h2>
+        </div>
+
+        <ul class="list-group">
+            <!-- Add bootstrap class list-group-item-success for green color BG-->
+            <li class="list-group-item-success  col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li">
+                <h4>New Teacher</h4>
+                <img src="https://live.staticflickr.com/2110/2196260331_c6592e8dab_c.jpg" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                <!--Add bootstrap class  col-lg-7 col-md-7 col-sm-7 col-xs-12-->
+                <p class="list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12">Reign over Hogwarts. After the trial, the Ministry of Magic appointed Umbridge as the new Defence Against the Dark Arts teacher at Hogwarts to allow the Ministry to monitor the activities within Hogwarts, and particularly Headmaster Albus Dumbledore. After her time at Hogwarts, Umbridge rose to prominent and influential positions in the Ministry of Magic in the Improper Use of Magic Office. After a while, Umbridge became the Senior Undersecretary to the Minister of Magic Cornelius Fudge. Umbridge used this position of power to satisfy her hatred of half-breeds, for example through new Anti-Werewolf Legislation which made it nearly impossible for Remus Lupin to find a new job after resigning his post as Defence Against the Dark Arts Professor at Hogwarts in 1994.</p>
+            </li>
+            <!-- Add bootstrap class list-group-item-warning for red color BG-->
+            <li class="list-group-item-warning  col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li">
+                <h4>New principal at hogwarts</h4>
+                <!--Add bootstrap class  col-lg-5 col-md-5 col-sm-5 col-xs-12-->
+                <img src="https://5.imimg.com/data5/ZA/SJ/QC/SELLER-7950336/rfid-smart-attendance-for-school-500x500.jpg" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                <p class="list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12">The person who throughout the series served as deputy headmistress. Minerva McGonagell. She became headmistress the second Snape ran from their duel before the battle of Hogwarts and served to our knowledge at least 19 years as she still held the post in the epilogue. And I was glad to hear that after learning the truth from Harry she insisted that Snapes portrait stayed in its rightful place among the other headmasters and headmistress’s in her office. Otherwise it would have been removed as he technically abandoned the position. In the end we have 3 great heads of Hogwarts all of whom will be remembered.</p>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="container">
+        <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="Alumni">
+            <h2 class="text-capitalize ">Our Alumni</h2>
+        </div>
+
+
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book" id="aluminiList" data-toggle="modal" data-target="#school_alumni1">
+            <img src="data:image/jpeg;base64,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" class="img-responsive">
+            <hr>
+            <p class="text-primary">Percy Weasley</p>
+        </div>
+
+        <!-- Modal -->
+        <!-- Give bootstrap class modal fade-->
+        <div class="modal fade" id="school_alumni1">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                       <!--Give the close button- &times;-->
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Percy Weasley</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <img src="data:image/jpeg;base64,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" class="img-responsive img_modal">
+                        <p class="p_modal">Percy Ignatius "Perce" Weasley (b. 22 August, 1976) was an English pure-blood wizard, the third child of Arthur and Molly Weasley (née Prewett). He was the younger brother of Bill and Charlie and the older brother of Ron, Ginny, George, and the late Fred Weasley. He attended Hogwarts School of Witchcraft and Wizardry from 1987-1994, and was both a prefect and Head Boy.<br>
+                            <a href="https://harrypotter.fandom.com/wiki/Percy_Weasley"><b>To Know More</b></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book" id="aluminiList" data-toggle="modal" data-target="#school_alumni2">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Hermione_Granger_poster.jpg/220px-Hermione_Granger_poster.jpg" class="img-responsive">
+            <hr>
+            <p class="text-primary">Hermione Granger</p>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="school_alumni2">
+            <!-- Give bootstrap class modal-dialog-->
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Hermione Granger</h4>
+                    </div>
+                     <!-- Give bootstrap class modal-body-->
+                    <div class="modal-body">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Hermione_Granger_poster.jpg/220px-Hermione_Granger_poster.jpg" class="img-responsive img_modal">
+                        <p class="p_modal">Minister Hermione Jean Granger (b. 19 September, 1979) was an English Muggle-born witch born to Mr and Mrs Granger. At the age of eleven, she learned about her magical nature and was accepted into Hogwarts School of Witchcraft and Wizardry. Hermione began attending Hogwarts in 1991 and was Sorted into Gryffindor House. She possessed a brilliant academic mind and proved to be a gifted student in almost every subject that she studied.<br>
+                            <a href="https://harrypotter.fandom.com/wiki/Hermione_Granger"><b>To Know More</b></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book" id="aluminiList" data-toggle="modal" data-target="#school_alumni3">
+            <img src="https://upload.wikimedia.org/wikipedia/en/d/d7/Harry_Potter_character_poster.jpg" class="img-responsive">
+            <hr>
+            <p class="text-primary">Harry Potter</p>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="school_alumni3">
+            <div class="modal-dialog">
+                <!-- Give bootstrap class modal-content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Harry Potter</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/d/d7/Harry_Potter_character_poster.jpg" class="img-responsive img_modal">
+                        <!-- Give bootstrap class p_modal-->
+                        <p class="p_modal">Harry James Potter (b. 31 July 1980) was an English half-blood wizard, and one of the most famous wizards of modern times. The only child and son of James and Lily Potter (née Evans), Harry's birth was overshadowed by a prophecy, naming either himself or Neville Longbottom as the one with the power to vanquish Lord Voldemort.<br>
+                            <a href="https://harrypotter.fandom.com/wiki/Harry_Potter"><b>To Know More</b></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book" id="aluminiList" data-toggle="modal" data-target="#school_alumni4">
+            <img src="https://upload.wikimedia.org/wikipedia/en/5/5e/Ron_Weasley_poster.jpg" class="img-responsive">
+            <hr>
+            <p class="text-primary">Ron Weasley</p>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="school_alumni4">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Ron Weasley</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/5/5e/Ron_Weasley_poster.jpg" class="img-responsive img_modal">
+                        <p class="p_modal">Ronald Bilius "Ron" Weasley (b. 1 March, 1980) was an English pure-blood wizard, the sixth and youngest son of Arthur and Molly Weasley (née Prewett). He was also the younger brother of Bill, Charlie, Percy, Fred, George, and the elder brother of Ginny. Ron and his siblings lived at the The Burrow, on the outskirts of Ottery St Catchpole, Devon.
+
+<br>
+                            <a href="https://harrypotter.fandom.com/wiki/Ronald_Weasley"><b>To Know More</b></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="Contact">
+            <h2 class="text-capitalize">contact us</h2>
+        </div>
+    </div>
+
+    <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48621622.296349645!2d8.539149300000004!3d41.943837599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48764103e950758d%3A0x2b152593ceb59b52!2sHogwarts%20Castle!5e0!3m2!1sen!2sin!4v1633075351056!5m2!1sen!2sin" width="600" height="450"></iframe>
+    </div>
+
+    <div id="details">
+        <img src="https://i.insider.com/5f74ad0c0ab50d00184ad4c2?width=700" class="img-responsive img-circle col-lg-3 col-md-3 col-sm-3 col-xs-4">
+        <h3>Principal Name: </h3>
+        <h4>Albus Percival Wulfric Brian Dumbledore</h4>
+        <div class="contact_1">
+            <a href="mailto:hogwarts@gmail.com?Subject=Hello">
+                <h5><i class="fa fa-envelope" style="font-size:48px"></i>&nbsp;&nbsp;hogwarts@gmail.com</h5>
+            </a>
+            <a href="https://youtu.be/beBeAkdf5DQ">
+                <h5><i class="fa fa-youtube" style="font-size:48px;color:red"></i>&nbsp;&nbsp;Fun-I-Mation6191</h5>
+            </a>
+            <a href="tel:413-497-0167">
+                <h5><i class="fa fa-phone-square" style="font-size:48px"></i>&nbsp;&nbsp;413-497-0167</h5>
+            </a>
+        </div>
+    </div>
+
+    <iframe class="youtube col-lg-8 col-md-8 col-sm-8 col-xs-12" height="700px" src="https://www.youtube.com/embed/xSRq1FZmeQc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <div id="footer"></div>
+</body>
+
+</html>
